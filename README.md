@@ -3,13 +3,14 @@
 ## Usage:
 
 ```bash
-$ ./bootstrap.sh [-q|-v]
-# chroot arm_linux
-# cd /root/kernel
-# [make linux-config]
-# make
+root@host # ./bootstrap.sh [-q|-v]
+root@host # chroot arm_linux
+root@arm-chroot-YYYY-MM-DD # cd /root/kernel
+root@arm-chroot-YYYY-MM-DD # [make linux-config]
+root@arm-chroot-YYYY-MM-DD # make
 ```
 ...
+
 PROFIT
 
 ### Also, you can set variables:
