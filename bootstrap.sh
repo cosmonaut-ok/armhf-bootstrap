@@ -104,6 +104,8 @@ msg "DONE"
 msg "Setting defauult locale to en_US.UTF-8... "
 sed -i 's/\#\ en\_US\.UTF\-8\ UTF\-8/en\_US\.UTF\-8\ UTF\-8/g' $DESTINATION/etc/locale.gen
 echo 'LANG=en_US.UTF-8' > $DESTINATION/etc/default/locale
+
+echo "arm-chroot-`date +%F`" > $DESTINATION/etc/hostname
 chroot $DESTINATION locale-gen
 msg "DONE"
 
