@@ -2,11 +2,13 @@
 
 ## Usage:
 
+```bash
 $ ./bootstrap.sh [-q|-v]
 # chroot arm_linux
 # cd /root/kernel
 # [make linux-config]
 # make
+```
 ...
 PROFIT
 
